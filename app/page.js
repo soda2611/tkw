@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Container>
       <Typography variant="h1" gutterBottom>
-        Welcome to MUI with Next.js
+        bruh
       </Typography>
       <Button variant="contained" color="primary">
         Get Started
