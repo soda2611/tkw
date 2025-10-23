@@ -15,8 +15,8 @@ export const metadata = {
   title: "bruh",
   description: "adu vcl",
   icons: {
-    icon: "/next.svg",
-    shortcut: "/next.svg",
+    icon: "../public/next.svg",
+    shortcut: "../public/next.svg",
   },
 };
 
