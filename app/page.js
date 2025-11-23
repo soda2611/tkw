@@ -22,6 +22,11 @@ import ExampleRadio from "./ElementExample/Input/exampleRadio";
 import ExampleSwitch from "./ElementExample/Input/exampleSwitch";
 import ExampleSlider from "./ElementExample/Input/exampleSlider";
 import ExampleAutocomplete from "./ElementExample/Input/exampleAutocomplete";
+import ExampleAlert from "./ElementExample/Respone/exampleAlert";
+import ExampleSnackbar from "./ElementExample/Respone/exampleSnackbar";
+import ExampleDialog from "./ElementExample/Respone/exampleDialog";
+import ExampleCircularProgress from "./ElementExample/Respone/exampleCircularProgress";
+import ExampleLinearProgress from "./ElementExample/Respone/exampleLinearProgress";
 
 const theme = createTheme({
   palette: {
@@ -61,6 +66,11 @@ export default function App() {
         <ExampleAutocomplete />
         <ExampleTypography />
         <ExampleButton />
+        <ExampleAlert />
+        <ExampleSnackbar />
+        <ExampleDialog />
+        <ExampleCircularProgress />
+        <ExampleLinearProgress />
       </div>
     </ThemeProvider>
   );
