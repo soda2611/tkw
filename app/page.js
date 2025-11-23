@@ -15,6 +15,7 @@ import ExampleCheckbox from "./ElementExample/Input/exampleCheckbox";
 import ExampleRadio from "./ElementExample/Input/exampleRadio";
 import ExampleSwitch from "./ElementExample/Input/exampleSwitch";
 import ExampleSlider from "./ElementExample/Input/exampleSlider";
+import ExampleAutocomplete from "./ElementExample/Input/exampleAutocomplete";
 
 const theme = createTheme({
   palette: {
@@ -45,6 +46,7 @@ export default function App() {
         <ExampleRadio />
         <ExampleSwitch />
         <ExampleSlider />
+        <ExampleAutocomplete />
         <ExampleTypography />
         <ExampleButton />
       </div>
