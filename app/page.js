@@ -27,21 +27,25 @@ import ExampleSnackbar from "./ElementExample/Respone/exampleSnackbar";
 import ExampleDialog from "./ElementExample/Respone/exampleDialog";
 import ExampleCircularProgress from "./ElementExample/Respone/exampleCircularProgress";
 import ExampleLinearProgress from "./ElementExample/Respone/exampleLinearProgress";
+import ExampleDarkMode from "./ThemeExample/exampleDarkMode";
+import React, { useState } from "react";
 
-const theme = createTheme({
-  palette: {
-    mode: "light",
-    primary: { main: "#1976d2" }, // Tùy chỉnh màu primary [cite: 40]
-    secondary: { main: "#9c27b0" }, // Tùy chỉnh màu secondary [cite: 41]
-  },
-  typography: {
-    fontFamily: "Inter, Roboto, Arial, sans-serif", // Thay đổi font chữ [cite: 43]
-    h4: { fontWeight: 700 },
-  },
-  spacing: 8, // Định nghĩa giá trị cơ sở cho spacing [cite: 44]
-});
 
 export default function App() {
+  const [isDark, setIsDark] = useState(false);
+  const theme = createTheme({
+    palette: {
+      mode: isDark ? "dark" : "light",
+      primary: { main: "#1976d2" },
+      secondary: { main: "#9c27b0" },
+    },
+    typography: {
+      fontFamily: "Inter, Roboto, Arial, sans-serif",
+      h4: { fontWeight: 700 },
+    },
+    spacing: 8,
+  });
+
   return (
     <ThemeProvider theme={theme}>
       <div style={{ padding: 16, display: "flex", flexDirection: "column", gap: 16 }}>
@@ -71,6 +75,7 @@ export default function App() {
         <ExampleDialog />
         <ExampleCircularProgress />
         <ExampleLinearProgress />
+        <ExampleDarkMode isDark={isDark} setIsDark={setIsDark} />
       </div>
     </ThemeProvider>
   );

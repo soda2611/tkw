@@ -12,7 +12,7 @@ export default function ExampleTabs() {
     };
 
     return (
-        <Box sx={{ backgroundColor: '#f5f5f5', padding: 2, borderRadius: 1, width: 450, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+        <Box sx={{ padding: 2, borderRadius: 1, width: 450, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             <InputLabel style={{ backgroundColor: '#1976d2', color: 'white', width: '100%', textAlign: 'center', padding: '8px', borderRadius: '4px' }}>Example Tabs</InputLabel>
             <Tabs value={tab} onChange={handleTabChange}>
                 <Tab label="Example Tab 1" />
