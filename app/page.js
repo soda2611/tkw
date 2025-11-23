@@ -27,7 +27,7 @@ import ExampleSnackbar from "./ElementExample/Respone/exampleSnackbar";
 import ExampleDialog from "./ElementExample/Respone/exampleDialog";
 import ExampleCircularProgress from "./ElementExample/Respone/exampleCircularProgress";
 import ExampleLinearProgress from "./ElementExample/Respone/exampleLinearProgress";
-import ExampleDarkMode from "./ThemeExample/exampleDarkMode";
+import ExampleTheme from "./ElementExample/exampleTheme";
 import React, { useState } from "react";
 
 
@@ -75,7 +75,7 @@ export default function App() {
         <ExampleDialog />
         <ExampleCircularProgress />
         <ExampleLinearProgress />
-        <ExampleDarkMode isDark={isDark} setIsDark={setIsDark} />
+        <ExampleTheme isDark={isDark} setIsDark={setIsDark} />
       </div>
     </ThemeProvider>
   );
