@@ -10,7 +10,7 @@ import ExampleGrid from "./ElementExample/exampleGrid";
 const theme = createTheme({
   palette: {
     mode: "light",
-    primary: { main: "#1976d2" },
+    primary: { main: "#1976d2" }, // Tùy chỉnh màu primary [cite: 40]
     secondary: { main: "#9c27b0" }, // Tùy chỉnh màu secondary [cite: 41]
   },
   typography: {
