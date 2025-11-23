@@ -1,21 +1,27 @@
-'use client';
+"use client";
 
-import * as React from "react";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { CssBaseline, Button } from "@mui/material";
+import ExampleButton from "./ElementExample/exampleButton";
 
-export default function Home() {
+const theme = createTheme({
+  palette: {
+    mode: "light",
+    primary: { main: "#1976d2" },
+    secondary: { main: "#9c27b0" }, // Tùy chỉnh màu secondary [cite: 41]
+  },
+  typography: {
+    fontFamily: "Inter, Roboto, Arial, sans-serif", // Thay đổi font chữ [cite: 43]
+    h4: { fontWeight: 700 },
+  },
+  spacing: 8, // Định nghĩa giá trị cơ sở cho spacing [cite: 44]
+});
+
+export default function App() {
   return (
-    <Box style={{ left: '0px', padding: '20px', spacing: '20px', width: '100', height: '100', backgroundColor: 'red' }}>
-      <Typography variant="h2" gutterBottom>
-        bruh
-      </Typography>
-      <Button variant="contained" color="primary">
-        nah
-      </Button>
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" style={{ bottom: '0px' }} />
-    </Box>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <ExampleButton />
+    </ThemeProvider>
   );
 }
