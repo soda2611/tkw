@@ -9,6 +9,12 @@ import ExampleGrid from "./ElementExample/exampleGrid";
 import ExampleBreadcrumbs from "./ElementExample/Breadcrumbs/exampleBreadcrumbs";
 import ExampleIconBreadcrumbs from "./ElementExample/Breadcrumbs/exampleIconBreadcrumbs";
 import ExampleShortenedBreadcrumbs from "./ElementExample/Breadcrumbs/exampleShortenedBreadcrumbs";
+import ExampleTextField from "./ElementExample/Input/exampleTextField";
+import ExampleSelect from "./ElementExample/Input/exampleSelect";
+import ExampleCheckbox from "./ElementExample/Input/exampleCheckbox";
+import ExampleRadio from "./ElementExample/Input/exampleRadio";
+import ExampleSwitch from "./ElementExample/Input/exampleSwitch";
+import ExampleSlider from "./ElementExample/Input/exampleSlider";
 
 const theme = createTheme({
   palette: {
@@ -26,14 +32,22 @@ const theme = createTheme({
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <ExampleBreadcrumbs />
-      <ExampleIconBreadcrumbs />
-      <ExampleShortenedBreadcrumbs />
-      <ExampleBox />
-      <ExampleGrid />
-      <ExampleTypography />
-      <ExampleButton />
+      <div style={{ padding: 16, display: "flex", flexDirection: "column", gap: 16 }}>
+        <CssBaseline />
+        <ExampleBreadcrumbs />
+        <ExampleIconBreadcrumbs />
+        <ExampleShortenedBreadcrumbs />
+        <ExampleBox />
+        <ExampleGrid />
+        <ExampleTextField />
+        <ExampleSelect />
+        <ExampleCheckbox />
+        <ExampleRadio />
+        <ExampleSwitch />
+        <ExampleSlider />
+        <ExampleTypography />
+        <ExampleButton />
+      </div>
     </ThemeProvider>
   );
 }
