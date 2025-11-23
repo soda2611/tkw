@@ -7,6 +7,7 @@ import ExampleTypography from "./ElementExample/exampleTypography";
 import ExampleBox from "./ElementExample/exampleBox";
 import ExampleGrid from "./ElementExample/exampleGrid";
 import ExampleBreadcrumbs from "./ElementExample/exampleBreadcrumbs";
+import ExampleShortenedBreadcrumbs from "./ElementExample/exampleShortenedBreadcrumbs";
 
 const theme = createTheme({
   palette: {
@@ -26,6 +27,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <ExampleBreadcrumbs />
+      <ExampleShortenedBreadcrumbs />
       <ExampleBox />
       <ExampleGrid />
       <ExampleTypography />

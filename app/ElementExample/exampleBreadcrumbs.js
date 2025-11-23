@@ -6,13 +6,13 @@ export default function ExampleBreadcrumbs() {
   return (
     <>
       <Breadcrumbs aria-label="breadcrumb">
-        <Link underline="hover" color="inherit" href="https://mui.com/">
+        <Link underline="hover" color="inherit" href="#">
           MUI
         </Link>
-        <Link underline="hover" color="inherit" href="https://mui.com/components/">
+        <Link underline="hover" color="inherit" href="#">
           Core
         </Link>
-        <Typography color="text.primary">Breadcrumbs</Typography>
+        <Typography color="text.primary">Example Breadcrumbs</Typography>
       </Breadcrumbs>
     </>
   );
