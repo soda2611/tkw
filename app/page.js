@@ -6,6 +6,8 @@ import ExampleButton from "./ElementExample/exampleButton";
 import ExampleTypography from "./ElementExample/exampleTypography";
 import ExampleBox from "./ElementExample/exampleBox";
 import ExampleGrid from "./ElementExample/exampleGrid";
+import ExampleAppbar from "./ElementExample/Navigation/Appbar/exampleAppbar";
+import ExampleMenuAppbar from "./ElementExample/Navigation/Appbar/exampleMenuAppbar";
 import ExampleBreadcrumbs from "./ElementExample/Navigation/Breadcrumbs/exampleBreadcrumbs";
 import ExampleIconBreadcrumbs from "./ElementExample/Navigation/Breadcrumbs/exampleIconBreadcrumbs";
 import ExampleShortenedBreadcrumbs from "./ElementExample/Navigation/Breadcrumbs/exampleShortenedBreadcrumbs";
@@ -35,6 +37,8 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <div style={{ padding: 16, display: "flex", flexDirection: "column", gap: 16 }}>
         <CssBaseline />
+        <ExampleAppbar />
+        <ExampleMenuAppbar />
         <ExampleBreadcrumbs />
         <ExampleIconBreadcrumbs />
         <ExampleShortenedBreadcrumbs />
