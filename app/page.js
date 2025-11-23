@@ -7,8 +7,8 @@ import ExampleTypography from "./ElementExample/exampleTypography";
 import ExampleBox from "./ElementExample/exampleBox";
 import ExampleGrid from "./ElementExample/exampleGrid";
 import ExampleBreadcrumbs from "./ElementExample/Breadcrumbs/exampleBreadcrumbs";
-import ExampleShortenedBreadcrumbs from "./ElementExample/Breadcrumbs/exampleShortenedBreadcrumbs";
 import ExampleIconBreadcrumbs from "./ElementExample/Breadcrumbs/exampleIconBreadcrumbs";
+import ExampleShortenedBreadcrumbs from "./ElementExample/Breadcrumbs/exampleShortenedBreadcrumbs";
 
 const theme = createTheme({
   palette: {
@@ -28,8 +28,8 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <ExampleBreadcrumbs />
-      <ExampleShortenedBreadcrumbs />
       <ExampleIconBreadcrumbs />
+      <ExampleShortenedBreadcrumbs />
       <ExampleBox />
       <ExampleGrid />
       <ExampleTypography />
