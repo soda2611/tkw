@@ -11,10 +11,10 @@ import ExampleMenuAppbar from "./ElementExample/Navigation/Appbar/exampleMenuApp
 import ExampleBreadcrumbs from "./ElementExample/Navigation/Breadcrumbs/exampleBreadcrumbs";
 import ExampleIconBreadcrumbs from "./ElementExample/Navigation/Breadcrumbs/exampleIconBreadcrumbs";
 import ExampleShortenedBreadcrumbs from "./ElementExample/Navigation/Breadcrumbs/exampleShortenedBreadcrumbs";
-import ExampleDrawer from "./ElementExample/Navigation/Drawer/ExampleDrawer";
-import ExamplePersistentDrawer from "./ElementExample/Navigation/Drawer/ExamplePersistentDrawer";
-import ExampleTabs from "./ElementExample/Navigation/Tabs/ExampleTabs";
-import ExampleScrollableTabs from "./ElementExample/Navigation/Tabs/ExampleScrollableTabs";
+import ExampleDrawer from "./ElementExample/Navigation/Drawer/exampleDrawer";
+import ExamplePersistentDrawer from "./ElementExample/Navigation/Drawer/examplePersistentDrawer";
+import ExampleTabs from "./ElementExample/Navigation/Tabs/exampleTabs";
+import ExampleScrollableTabs from "./ElementExample/Navigation/Tabs/exampleScrollableTabs";
 import ExampleTextField from "./ElementExample/Input/exampleTextField";
 import ExampleSelect from "./ElementExample/Input/exampleSelect";
 import ExampleCheckbox from "./ElementExample/Input/exampleCheckbox";
