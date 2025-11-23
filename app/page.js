@@ -1,8 +1,11 @@
 "use client";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { CssBaseline, Button } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
 import ExampleButton from "./ElementExample/exampleButton";
+import ExampleTypography from "./ElementExample/exampleTypography";
+import ExampleBox from "./ElementExample/exampleBox";
+import ExampleGrid from "./ElementExample/exampleGrid";
 
 const theme = createTheme({
   palette: {
@@ -21,6 +24,9 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <ExampleBox />
+      <ExampleGrid />
+      <ExampleTypography />
       <ExampleButton />
     </ThemeProvider>
   );
