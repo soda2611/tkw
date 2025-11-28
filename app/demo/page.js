@@ -40,7 +40,7 @@ export default function App() {
         <CssBaseline />
         <AppBar position='static' sx={{ borderRadius: 4, display: 'flex', justifyContent: 'center', width: '100%' }}>
           <Toolbar>
-            <img src='/tkw/public/demo/images/image.png' alt='Logo' style={{ height: 40, marginRight: 16 }} />
+            <img src="https://github.com/soda2611/tkw/blob/main/public/demo/images/image.png?raw=true" alt='Logo' style={{ height: 40, marginRight: 16 }} />
             <Typography variant='h5' fontWeight='bold' component='div'>
             GreenFarm
             </Typography>
