@@ -40,7 +40,7 @@ export default function App() {
         <CssBaseline />
         <AppBar position='static' sx={{ borderRadius: 4, display: 'flex', justifyContent: 'center', width: '100%' }}>
           <Toolbar>
-            <img src='/demo/images/image.png' alt='Logo' style={{ height: 40, marginRight: 16 }} />
+            <img src='/public/demo/images/image.png' alt='Logo' style={{ height: 40, marginRight: 16 }} />
             <Typography variant='h5' fontWeight='bold' component='div'>
             GreenFarm
             </Typography>
