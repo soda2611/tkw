@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Website bán nông sản - rau củ sạch",
-  description: "Đồ án cuối kì của nhóm tkw",
+  title: "GreenFarm",
+  description: "Website bán nông sản - rau củ sạch",
   icons: {
     icon: "/demo/images/image.png",
     shortcut: "/demo/images/image.png",
