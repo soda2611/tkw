@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "MUI Element Examples",
-  description: "Ví dụ về các thành phần giao diện người dùng sử dụng Material-UI",
+  title: "Website bán nông sản - rau củ sạch",
+  description: "Đồ án cuối kì của nhóm tkw",
   icons: {
     icon: "/demo/images/image.png",
     shortcut: "/demo/images/image.png",

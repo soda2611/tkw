@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.5",
     "@mui/material": "^7.3.5",
+    "express": "^5.1.0",
     "next": "16.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
@@ -25,5 +26,18 @@
     "gh-pages": "^6.3.0",
     "typescript": "5.9.3"
   },
-  "homepage": "https://soda2611.github.io/tkw"
+  "homepage": "https://soda2611.github.io/tkw",
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soda2611/tkw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/soda2611/tkw/issues"
+  }
 }
