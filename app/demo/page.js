@@ -48,11 +48,12 @@ export default function App() {
             <Typography variant='h5' fontWeight='bold' component='div'>
             GreenFarm
             </Typography>
-            <Tabs value={tab} onChange={handleTabChange} textColor='white' indicatorColor='secondary' sx={{ flexGrow: 1, marginLeft: 3 }}>
+            <Tabs value={tab} onChange={handleTabChange} textColor='white' indicatorColor='secondary' variant="scrollable" scrollButtons="auto" sx={{ marginLeft: 3 }}>
                 <Tab icon={<HomeIcon />} iconPosition="start" label='Trang chủ' />
                 <Tab icon={<ShoppingBagIcon />} iconPosition="start" label='Sản phẩm' />
                 <Tab icon={<LocalPhoneIcon />} iconPosition="start" label='Liên hệ' />
             </Tabs>
+            <Box sx={{ flexGrow: 1 }} />
             <IconButton color='inherit' aria-label='cart' sx={{ fontSize: 14, marginRight: 1, borderRadius: 2.5, backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
               <ShoppingCartIcon />
               Giỏ hàng
