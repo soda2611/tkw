@@ -25,7 +25,7 @@ export default function App() {
       <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
         <CssBaseline />
         <Box sx={{ bgcolor: 'primary.main', p: 2, borderRadius: 1, boxShadow: 1, display: 'flex', alignItems: 'center' }}>
-          <Box component="img" src="image.png" alt="Logo" sx={{ height: 50, mr: 2 }} />
+          <Box component="img" src="./src/img/image.png" alt="Logo" sx={{ height: 50, mr: 2 }} />
           <Typography variant="h4">Website bán nông sản - rau củ sạch</Typography>
         </Box>
       </div>
