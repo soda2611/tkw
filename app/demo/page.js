@@ -12,6 +12,10 @@ import { Typography,
          IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import HomeIcon from '@mui/icons-material/Home';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+
 
 export default function App() {
   const [isDark, setIsDark] = useState(false);
@@ -45,9 +49,9 @@ export default function App() {
             GreenFarm
             </Typography>
             <Tabs value={tab} onChange={handleTabChange} textColor='white' indicatorColor='secondary' sx={{ flexGrow: 1, marginLeft: 3 }}>
-                <Tab label='Trang chủ' />
-                <Tab label='Sản phẩm' />
-                <Tab label='Liên hệ' />
+                <Tab icon={<HomeIcon />} iconPosition="start" label='Trang chủ' />
+                <Tab icon={<ShoppingBagIcon />} iconPosition="start" label='Sản phẩm' />
+                <Tab icon={<LocalPhoneIcon />} iconPosition="start" label='Liên hệ' />
             </Tabs>
             <IconButton color='inherit' aria-label='cart' sx={{ fontSize: 14, marginRight: 1, borderRadius: 2.5, backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
               <ShoppingCartIcon />
