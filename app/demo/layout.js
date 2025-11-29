@@ -10,6 +10,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <style>
+        {`
+          ::-webkit-scrollbar {
+            width: 8px;
+            background: #f1f1f1;
+          }
+          ::-webkit-scrollbar-thumb {
+            background: #4caf50;
+            border-radius: 4px;
+          }
+          ::-webkit-scrollbar-thumb:hover {
+            background: #388e3c;
+          }
+            
+          html {
+            scrollbar-width: thin;
+            scrollbar-color: #4caf50 #f1f1f1;
+          }
+        `}
+      </style>
       <body>
         {children}
       </body>

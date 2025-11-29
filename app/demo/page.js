@@ -9,12 +9,10 @@ import { Typography,
          Toolbar,
          Tab,
          Tabs,
-         IconButton } from '@mui/material';
+         IconButton, 
+         Grid} from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import HomeIcon from '@mui/icons-material/Home';
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 
 export default function App() {
@@ -22,7 +20,7 @@ export default function App() {
   const theme = createTheme({
     palette: {
       mode: isDark ? 'dark' : 'light',
-      primary: { main: '#1faa54ff' },
+      primary: { main: '#1faa54ff', light: '#00af06d2' },
       secondary: { main: '#ebff38ff' },
     },
     typography: {
@@ -43,36 +41,57 @@ export default function App() {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, padding: 16 }}>
         <CssBaseline />
         <AppBar position='static' sx={{ borderRadius: 4, display: 'flex', justifyContent: 'center', width: '100%' }}>
-          <Toolbar>
-            <img src="https://github.com/soda2611/tkw/blob/main/public/demo/images/image.png?raw=true" alt='Logo' style={{ height: 40, marginRight: 16 }} />
+          <Toolbar sx={{ p: 1, gap: 2 }}>
+            <img src="https://github.com/soda2611/tkw/blob/main/public/demo/images/image.png?raw=true" alt='Logo' style={{ height: 40}} />
             <Typography variant='h5' fontWeight='bold' component='div'>
             GreenFarm
             </Typography>
-            <Tabs value={tab} onChange={handleTabChange} textColor='white' indicatorColor='secondary' variant="scrollable" scrollButtons="auto" sx={{ marginLeft: 3 }}>
-                <Tab icon={<HomeIcon />} iconPosition="start" label='Trang chủ' />
-                <Tab icon={<ShoppingBagIcon />} iconPosition="start" label='Sản phẩm' />
-                <Tab icon={<LocalPhoneIcon />} iconPosition="start" label='Liên hệ' />
+            <Tabs value={tab} onChange={handleTabChange} textColor='white' indicatorColor='secondary' variant="scrollable" scrollButtons="auto">
+                <Tab label='Trang chủ' />
+                <Tab label='Sản phẩm' />
+                <Tab label='Liên hệ' />
             </Tabs>
             <Box sx={{ flexGrow: 1 }} />
-            <IconButton color='inherit' aria-label='cart' sx={{ fontSize: 14, marginRight: 1, borderRadius: 2.5, backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
+            <IconButton color='inherit' aria-label='cart' sx={{ fontSize: 14, borderRadius: 2.5, backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
               <ShoppingCartIcon />
               Giỏ hàng
             </IconButton>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: 250, marginRight: -14, backgroundColor: 'white', borderRadius: 10, paddingLeft: 8 }}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: 200, backgroundColor: 'white', borderRadius: 10, paddingLeft: 8 }}>
               <SearchIcon sx={{ color: 'black' }}/>
               <input style={{ height: 40, borderRadius: 10, outline: 'none', width: '100%', border: 'none' }} placeholder='Tìm kiếm sản phẩm...'></input>
             </div>
           </Toolbar>
         </AppBar>
-        <Box sx={{ mt: 2, maxHeight: '90vh', width: '100%', borderRadius: 5, padding: 2, gap: 10, display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-            {tab === 0 && <div style={{ overflowY: 'auto', height: '100%', width: '100%', display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <Typography variant='h3' fontWeight='bold' sx={{ color: 'primary.main' }}>Trang chủ</Typography>
+        <Box sx={{ maxHeight: '85vh', width: '100%', borderRadius: 5, gap: 10, display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+            {tab === 0 && <div style={{ overflowY: 'hidden', height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 10 }}>
+              <p style={{ color: '#1faa54ff', fontWeight: 'bold', fontSize: 50, marginTop: 5, textAlign: 'center' }}>Trang chủ</p>
             </div>}
-            {tab === 1 && <div style={{ overflowY: 'auto', height: '100%', width: '100%', display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <Typography variant='h3' fontWeight='bold' sx={{ color: 'primary.main' }}>Sản phẩm</Typography>
-              </div>}
-            {tab === 2 && <div style={{ overflowY: 'auto', height: '100%', width: '100%', display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <Typography variant='h3' fontWeight='bold' sx={{ color: 'primary.main' }}>Liên hệ</Typography>
+            {tab === 1 && <div style={{ overflowY: 'hidden', height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 10 }}>
+              <p style={{ color: '#1faa54ff', fontWeight: 'bold', fontSize: 50, marginTop: 5, textAlign: 'center' }}>Sản phẩm</p>
+              <div style={{ overflowY: 'hidden', height: '100%', width: '90%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, borderRadius: 10, padding: 10, backgroundColor: '#f0f0f0' }}>
+                <div style={{ overflowY: 'auto', height: '100%', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, backgroundColor: '#f0f0f0' }}>
+                  <Grid container spacing={{ xs: 5, md: 5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                    {Array.from({ length: 20 }).map((_, i) => (
+                      <Grid container spacing={2} key={i} sx={{ padding: 1, maxWidth: 500, width: '100%' }}>
+                        <Grid item>
+                          <Box sx={{ backgroundColor: 'green', width: 100, height: 100, borderRadius: 2.5 }} />
+                        </Grid>
+                        <Grid item xs>
+                          <Typography variant="h6">Sản phẩm {i + 1}</Typography>
+                          <Typography variant="body2">Mô tả sản phẩm {i + 1}</Typography>
+                          <IconButton color='inherit' aria-label='cart' sx={{ fontSize: 14, borderRadius: 2.5, backgroundColor: 'primary.main', color: 'white', '&:hover': {backgroundColor: 'primary.light'} }}>
+                            <ShoppingCartIcon />
+                            Thêm vào giỏ hàng
+                          </IconButton>
+                        </Grid>
+                      </Grid>
+                    ))}
+                  </Grid>
+                </div>
+              </div>
+            </div>}
+            {tab === 2 && <div style={{ overflowY: 'hidden', height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 10 }}>
+              <p style={{ color: '#1faa54ff', fontWeight: 'bold', fontSize: 50, marginTop: 5, textAlign: 'center' }}>Liên hệ </p>
             </div>}
         </Box>
       </div>
