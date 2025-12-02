@@ -2,7 +2,7 @@
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Typography,
          Box,
          AppBar,
@@ -45,6 +45,10 @@ export default function App() {
     spacing: 8,
   });
   const [tab, setTab] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [tab]);
   
   const handleTabChange = (event, newValue) => {
       setTab(newValue);
