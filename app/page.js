@@ -29,7 +29,6 @@ import ExampleCircularProgress from "./ElementExample/Respone/exampleCircularPro
 import ExampleLinearProgress from "./ElementExample/Respone/exampleLinearProgress";
 import ExampleTheme from "./ElementExample/exampleTheme";
 import React, { useState } from "react";
-import { Button, Link } from "@mui/material";
 
 
 export default function App() {
@@ -50,11 +49,6 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <div style={{ padding: 16, display: "flex", flexDirection: "column", gap: 16 }}>
-        <Button variant="contained" color="primary" style={{ width: 300 }}>
-          <Link href="./demo" style={{ textDecoration: "none", color: "inherit" }}>
-            Website bán nông sản - rau củ sạch
-          </Link>
-        </Button>
         <CssBaseline />
         <ExampleAppbar />
         <ExampleMenuAppbar />
